@@ -1,0 +1,21 @@
+<!-- chat-room.component.html -->
+
+<div class="main-container">
+  <div class="left-container">
+    I am the left container
+  </div>
+  <div class="right-container">
+    <div  *ngFor="let msg of joiningMessage" style="text-align: center;"><b>{{msg}}</b> has joined the chat!</div>
+    <div class="chat-box">
+        <div *ngFor="let msg of messages"><app-user [name]=msg.name [message]=msg.message></app-user></div>
+    </div>
+    <div class="chat-input">
+      <form (submit)="sendMessage()">
+        <input type="text" [(ngModel)]="message" name="message">
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+

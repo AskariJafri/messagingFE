@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  margin: 1%;
+  align-items: center;
+  .avatar {
+    // border: 1px solid;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 1%;
+    background-color: #5A55D8;
+    color:#F6D9FF;
+
+    p{
+      margin-top: 30%;
+    }
+  }
+  .message-container{
+    // border:1px solid;
+    border-radius: 10px;
+    padding:0.5%;
+    background-color: #B785F5;
+    color:#F6D9FF;
+  }
+}
