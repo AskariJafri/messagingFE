@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "dist/messaging-app",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+
+    "secure": false
+  }
+}

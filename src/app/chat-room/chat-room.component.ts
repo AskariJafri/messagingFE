@@ -15,7 +15,7 @@ export class ChatRoomComponent {
   public name: any="";
   public joiningMessage:string[]=[]
   constructor(private route:Router) {
-    this.socket = io('http://44.201.63.57:3000'); // replace with your server URL
+    this.socket = io('http://54.236.35.93:3000'); // replace with your server URL
     this.socket.on('message', (msg: string) => {
       console.log(msg)
       this.messages.push(msg);
